@@ -1,15 +1,15 @@
 [
     {
-        "version": "3059",
-        "shortversion": "v2.3.0-beta2",
-        "title": "YMusic Alpha",
-        "timestamp": 1513438280,
-        "appsize": 6635045,
-        "notes": "<h2>Version 2.3.0 Beta 2</h2>\n\n<p><strong>Dec 16, 2017</strong>  </p>\n\n<ul>\n<li>Shazam function improved</li>\n<li>Add new section: <strong>Playlist for you</strong> - list of recommended video base on what you play.</li>\n<li>Update YouTube Search:\n\n<ul>\n<li><strong>Add artist&#39;s top track and albums in search result</strong></li>\n<li>Fix display previous search result when rotate screen</li>\n</ul></li>\n<li>Fix can&#39;t update new version in some devices</li>\n</ul>\n\n<p><strong>Dec 11, 2017</strong><br>\n<img src=\"https://i.imgur.com/pXsy8Kv.png\" width=\"250\"></img></p>\n\n<ul>\n<li><strong>Add Shazam support</strong>: browse Shazam chart, artist&#39;s top tracks inside YMusic. Play music from Shazam App by clicking <strong>Share button</strong>.</li>\n<li>Fix critical bugs in music player:\n\n<ul>\n<li>Fix music stop after screen off for a while</li>\n<li>Fix music player crash when play next/previous</li>\n</ul></li>\n<li>UI change:\n\n<ul>\n<li><strong>RTL layout support</strong>: fix broken UI in RTL language.</li>\n<li>Fix can&#39;t scroll playing queue in some device.</li>\n</ul></li>\n<li>Many other bugs fix and performance improvement.</li>\n</ul>\n",
-        "mandatory": true,
+        "version": "3060",
+        "shortversion": "v2.3.0",
+        "title": "YMusic",
+        "timestamp": 1513588646,
+        "appsize": 6779608,
+        "notes": "<h2>Version 2.3.0</h2>\n\n<p><strong>Dec 18, 2017</strong><br>\n<img src=\"https://i.imgur.com/pXsy8Kv.png\" width=\"250\"></img></p>\n\n<ul>\n<li><strong>Add Shazam support</strong>: browse Shazam chart, artist&#39;s top tracks inside YMusic. Play music from Shazam App by clicking <strong>Share button</strong>.</li>\n<li>Fix critical bugs in music player:\n\n<ul>\n<li>Fix music stop after screen off for a while</li>\n<li>Fix music player crash when play next/previous</li>\n</ul></li>\n<li>UI change:\n\n<ul>\n<li><strong>RTL layout support</strong>: fix broken UI in RTL language.</li>\n<li>Fix can&#39;t scroll playing queue in some device.</li>\n</ul></li>\n<li>Add new section: <strong>Playlist for you</strong> - list of recommended video base on what you play.</li>\n<li>Update YouTube Search:\n\n<ul>\n<li><strong>Add artist&#39;s top track and albums in search result</strong></li>\n<li>Fix display previous search result when rotate screen</li>\n<li>Add <strong>Artist&#39;s Mix videos</strong> in search result</li>\n</ul></li>\n<li>Remove notification sound and vibration in Android O</li>\n<li>Fix can&#39;t update new version in some devices</li>\n<li>Fix crash on start up</li>\n<li><em>Add more bugs to fix later</em></li>\n<li>Stability and performance improvement</li>\n</ul>\n",
+        "mandatory": false,
         "external": false,
         "device_family": null,
-        "id": 128,
+        "id": 130,
         "app_id": 456816,
         "minimum_os_version": "4.1"
     },
