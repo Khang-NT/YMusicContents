@@ -1,11 +1,25 @@
 [
     {
+        "version": "3068",
+        "shortversion": "v2.3.4",
+        "title": "YMusic Android",
+        "timestamp": 1514363409,
+        "appsize": 6821129,
+        "notes": "<h2>Version 2.3.4</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<p><strong>Dec 27, 2017</strong>  </p>\n\n<ul>\n<li>Add notification settings: disable vibration, sound, opt-out update notification,...</li>\n<li>Improve loading speed and data caching: fix long loading recommended videos.</li>\n<li>Fix Jockey artist&#39;s image and bio not display</li>\n<li>Fix player problem: display wrong now playing, stop playing,...</li>\n<li>Fix download problems: fix song downloaded not display in Jockey</li>\n<li>Fix YMusic&#39;s tabs setting bug</li>\n<li>Stability and performance improvement.</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 190,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3060",
         "shortversion": "v2.3.0",
         "title": "YMusic Android",
         "timestamp": 1513588642,
         "appsize": 6779608,
-        "notes": "<h2>Version 2.3.0</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<p><strong>Dec 18, 2017</strong><br>\n<img src=\"https://i.imgur.com/pXsy8Kv.png\" width=\"250\"></img></p>\n\n<ul>\n<li><strong>Add Shazam support</strong>: browse Shazam chart, artist&#39;s top tracks inside YMusic. Play music from Shazam App by clicking <strong>Share button</strong>.</li>\n<li>Fix critical bugs in music player:\n\n<ul>\n<li>Fix music stop after screen off for a while</li>\n<li>Fix music player crash when play next/previous</li>\n</ul></li>\n<li>UI change:\n\n<ul>\n<li><strong>RTL layout support</strong>: fix broken UI in RTL language.</li>\n<li>Fix can&#39;t scroll playing queue in some device.</li>\n</ul></li>\n<li>Add new section: <strong>Playlist for you</strong> - list of recommended video base on what you play.</li>\n<li>Update YouTube Search:\n\n<ul>\n<li><strong>Add artist&#39;s top track and albums in search result</strong></li>\n<li>Fix display previous search result when rotate screen</li>\n<li>Add <strong>Artist&#39;s Mix videos</strong> in search result</li>\n</ul></li>\n<li>Remove notification sound and vibration in Android O</li>\n<li>Fix can&#39;t update new version in some devices</li>\n<li>Fix crash on start up</li>\n<li><em>Add more bugs to fix later</em></li>\n<li>Stability and performance improvement</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.0</h2>\n\n<p><strong>Dec 18, 2017</strong><br>\n<img src=\"https://i.imgur.com/pXsy8Kv.png\" width=\"250\"></img></p>\n\n<ul>\n<li><strong>Add Shazam support</strong>: browse Shazam chart, artist&#39;s top tracks inside YMusic. Play music from Shazam App by clicking <strong>Share button</strong>.</li>\n<li>Fix critical bugs in music player:\n\n<ul>\n<li>Fix music stop after screen off for a while</li>\n<li>Fix music player crash when play next/previous</li>\n</ul></li>\n<li>UI change:\n\n<ul>\n<li><strong>RTL layout support</strong>: fix broken UI in RTL language.</li>\n<li>Fix can&#39;t scroll playing queue in some device.</li>\n</ul></li>\n<li>Add new section: <strong>Playlist for you</strong> - list of recommended video base on what you play.</li>\n<li>Update YouTube Search:\n\n<ul>\n<li><strong>Add artist&#39;s top track and albums in search result</strong></li>\n<li>Fix display previous search result when rotate screen</li>\n<li>Add <strong>Artist&#39;s Mix videos</strong> in search result</li>\n</ul></li>\n<li>Remove notification sound and vibration in Android O</li>\n<li>Fix can&#39;t update new version in some devices</li>\n<li>Fix crash on start up</li>\n<li><em>Add more bugs to fix later</em></li>\n<li>Stability and performance improvement</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -122,20 +136,6 @@
         "external": false,
         "device_family": null,
         "id": 161,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "1035",
-        "shortversion": "v2.1.8-beta1",
-        "title": "YMusic Android",
-        "timestamp": 1506753940,
-        "appsize": 5948453,
-        "notes": "<h2>Version 2.1.8 Beta 1</h2>\n\n<ul>\n<li>Add Setting option: <strong>Play highest audio quality on Wifi</strong></li>\n<li>Fix crash while sending feedback</li>\n<li>Fix crash when open YouTube playlist</li>\n</ul>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://i.imgur.com/dk9KH72.png\" alt=\"\"></a></p>\n",
-        "mandatory": false,
-        "external": false,
-        "device_family": null,
-        "id": 152,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
