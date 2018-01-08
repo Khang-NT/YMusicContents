@@ -1,11 +1,25 @@
 [
     {
+        "version": "3074",
+        "shortversion": "v2.3.6",
+        "title": "YMusic Android",
+        "timestamp": 1515394712,
+        "appsize": 6858593,
+        "notes": "<h2>Version 2.3.6</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Introduce new MP3 converter plugin, download MP3 max speed and high quality.</li>\n<li>Add &quot;Queue next&quot; function</li>\n<li>Fix can&#39;t play some songs after download, because the file is broken.</li>\n<li>Various bugs fix and improvements.</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 194,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3068",
         "shortversion": "v2.3.4",
         "title": "YMusic Android",
         "timestamp": 1514363409,
         "appsize": 6821129,
-        "notes": "<h2>Version 2.3.4</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<p><strong>Dec 27, 2017</strong>  </p>\n\n<ul>\n<li>Add notification settings: disable vibration, sound, opt-out update notification,...</li>\n<li>Improve loading speed and data caching: fix long loading recommended videos.</li>\n<li>Fix Jockey artist&#39;s image and bio not display</li>\n<li>Fix player problem: display wrong now playing, stop playing,...</li>\n<li>Fix download problems: fix song downloaded not display in Jockey</li>\n<li>Fix YMusic&#39;s tabs setting bug</li>\n<li>Stability and performance improvement.</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.4</h2>\n\n<p><strong>Dec 27, 2017</strong>  </p>\n\n<ul>\n<li>Add notification settings: disable vibration, sound, opt-out update notification,...</li>\n<li>Improve loading speed and data caching: fix long loading recommended videos.</li>\n<li>Fix Jockey artist&#39;s image and bio not display</li>\n<li>Fix player problem: display wrong now playing, stop playing,...</li>\n<li>Fix download problems: fix song downloaded not display in Jockey</li>\n<li>Fix YMusic&#39;s tabs setting bug</li>\n<li>Stability and performance improvement.</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -122,20 +136,6 @@
         "external": false,
         "device_family": null,
         "id": 164,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3039",
-        "shortversion": "v2.1.8-beta3",
-        "title": "YMusic Android",
-        "timestamp": 1508269603,
-        "appsize": 6016517,
-        "notes": "<h2>Version 2.1.8-beta3</h2>\n\n<ul>\n<li><strong>Connect with YouTube account feature:</strong>\n\n<ul>\n<li>Get your liked videos, private/public playlists</li>\n<li>Add video to your playlist</li>\n</ul></li>\n<li>Add &quot;sort YouTube playlist&quot; function</li>\n<li>Improve Mp3 download </li>\n<li>Sort album&#39;s songs by track number</li>\n<li>And many others bug fix, stability and performance improvement</li>\n</ul>\n",
-        "mandatory": false,
-        "external": false,
-        "device_family": null,
-        "id": 161,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
