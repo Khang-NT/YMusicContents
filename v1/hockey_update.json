@@ -5,7 +5,7 @@
         "title": "YMusic Android",
         "timestamp": 1515394712,
         "appsize": 6858593,
-        "notes": "<h2>Version 2.3.6</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Introduce new MP3 converter plugin, download MP3 max speed and high quality.</li>\n<li>Fix can&#39;t play some songs after download, because the file is broken.</li>\n<li>Various bugs fix and improvements.</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.6</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Introduce new MP3 converter plugin, download MP3 max speed and high quality.</li>\n<li>Add &quot;Queue next&quot; function</li>\n<li>Fix can&#39;t play some songs after download, because the file is broken.</li>\n<li>Various bugs fix and improvements.</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
