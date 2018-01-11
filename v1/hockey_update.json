@@ -5,7 +5,7 @@
         "title": "YMusic Android",
         "timestamp": 1515661658,
         "appsize": 6865582,
-        "notes": "<h2>Version 2.3.8</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix Mp3 download error on Android O</li>\n<li>Fix error when play LIVE stream</li>\n<li>Fix can&#39;t clear play history</li>\n<li>Update DownloadManger: add menu to see mp3 convert history</li>\n<li>Fix crash when browse album, and others random crash.</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.8</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix Mp3 download error on Android O</li>\n<li>Fix error when play LIVE stream</li>\n<li>Fix can&#39;t clear play history</li>\n<li>Update DownloadManger: add menu to see mp3 convert history</li>\n<li>Fix crash when browse album, and others random crash.</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
