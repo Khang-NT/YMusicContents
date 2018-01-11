@@ -1,11 +1,25 @@
 [
     {
+        "version": "3078",
+        "shortversion": "v2.3.8",
+        "title": "YMusic Android",
+        "timestamp": 1515661658,
+        "appsize": 6865582,
+        "notes": "<h2>Version 2.3.8</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix Mp3 download error on Android O</li>\n<li>Fix error when play LIVE stream</li>\n<li>Fix can&#39;t clear play history</li>\n<li>Update DownloadManger: add menu to see mp3 convert history</li>\n<li>Fix crash when browse album, and others random crash.</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 197,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3074",
         "shortversion": "v2.3.6",
         "title": "YMusic Android",
         "timestamp": 1515394712,
         "appsize": 6858593,
-        "notes": "<h2>Version 2.3.6</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Introduce new MP3 converter plugin, download MP3 max speed and high quality.</li>\n<li>Add &quot;Queue next&quot; function</li>\n<li>Fix can&#39;t play some songs after download, because the file is broken.</li>\n<li>Various bugs fix and improvements.</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.6</h2>\n\n<ul>\n<li>Introduce new MP3 converter plugin, download MP3 max speed and high quality.</li>\n<li>Add &quot;Queue next&quot; function</li>\n<li>Fix can&#39;t play some songs after download, because the file is broken.</li>\n<li>Various bugs fix and improvements.</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -122,20 +136,6 @@
         "external": false,
         "device_family": null,
         "id": 166,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3042",
-        "shortversion": "v2.1.8",
-        "title": "YMusic Android",
-        "timestamp": 1508700586,
-        "appsize": 5652860,
-        "notes": "<h2>Version 2.1.8</h2>\n\n<ul>\n<li>[NEW] Now you can <strong>connect with YouTube account</strong>:\n\n<ul>\n<li>Easily manage playlist in your account, include: create/delete playlist, add/remove videos,...</li>\n<li>See list of videos you liked as well as uploaded/downloaded videos</li>\n</ul></li>\n<li>[NEW] Sort video in YouTube playlist</li>\n<li>[NEW] Add Setting option: <strong>Play highest audio quality on Wifi</strong></li>\n<li>[NEW] <strong>Add Ad banners</strong></li>\n<li>[FIX] Fix many crashes: error when open YouTube playlist, feedback error,...</li>\n<li>[FIX] UI bugs, mostly in tablet devices</li>\n<li>[IMPROVEMENT] Improve stability of Mp3 download</li>\n</ul>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://i.imgur.com/dk9KH72.png\" alt=\"\"></a> </p>\n",
-        "mandatory": false,
-        "external": false,
-        "device_family": null,
-        "id": 164,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
