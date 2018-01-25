@@ -1,11 +1,25 @@
 [
     {
+        "version": "3080",
+        "shortversion": "v2.3.10",
+        "title": "YMusic Android",
+        "timestamp": 1516903661,
+        "appsize": 5950676,
+        "notes": "<h2>Version 2.3.10</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix <strong>MP3</strong> convert error when video title contains single quote &#39;</li>\n<li>Add <strong>AAC</strong> audio, <strong>Full HD</strong> video download options</li>\n<li>Fix login error with message &quot;PRECONDITION REQUIRED&quot;</li>\n<li>Fix can&#39;t change settings: Content location, Audio quality on mobile/wifi network</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 201,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3079",
         "shortversion": "v2.3.9",
         "title": "YMusic Android",
         "timestamp": 1515695810,
         "appsize": 6869236,
-        "notes": "<h2>Version 2.3.9</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Optimize speed load video (3 times faster)</li>\n<li>Optimize data consumed</li>\n<li><strong>Add settings to control &quot;Audio Quality&quot; when using Cellular network and Wifi.</strong></li>\n<li>Fix Mp3 download error on Android O</li>\n<li>Fix error when play LIVE stream</li>\n<li>Fix can&#39;t clear play history</li>\n<li>Update DownloadManger: add menu to see mp3 convert history</li>\n<li>Fix crash when browse album, and others random crash.</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.9</h2>\n\n<ul>\n<li>Optimize speed load video (3 times faster)</li>\n<li>Optimize data consumed</li>\n<li><strong>Add settings to control &quot;Audio Quality&quot; when using Cellular network and Wifi.</strong></li>\n<li>Fix Mp3 download error on Android O</li>\n<li>Fix error when play LIVE stream</li>\n<li>Fix can&#39;t clear play history</li>\n<li>Update DownloadManger: add menu to see mp3 convert history</li>\n<li>Fix crash when browse album, and others random crash.</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -122,20 +136,6 @@
         "external": false,
         "device_family": null,
         "id": 168,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3043",
-        "shortversion": "v2.1.9-beta1",
-        "title": "YMusic Android",
-        "timestamp": 1508930077,
-        "appsize": 5672342,
-        "notes": "<h2>Version 2.1.9 Beta1</h2>\n\n<ul>\n<li>Add YouTube <strong>Brand account</strong> login feature</li>\n</ul>\n",
-        "mandatory": false,
-        "external": false,
-        "device_family": null,
-        "id": 166,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
