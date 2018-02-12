@@ -1,11 +1,25 @@
 [
     {
+        "version": "3084",
+        "shortversion": "v2.3.12",
+        "title": "YMusic Android",
+        "timestamp": 1518357547,
+        "appsize": 6875286,
+        "notes": "<h2>Version 2.3.12</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Restore FLAC support</li>\n<li>Update download file name format &quot;Artist - Song name&quot;</li>\n<li>Auto scroll song name if it&#39;s too long</li>\n<li>Fix login error </li>\n<li>Fix display wrong album art</li>\n<li>Fix can&#39;t play music when connect to monitored network (e.g using Proxy/VPN/company&#39;s wifi)</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 203,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3080",
         "shortversion": "v2.3.10",
         "title": "YMusic Android",
         "timestamp": 1516903661,
         "appsize": 5950676,
-        "notes": "<h2>Version 2.3.10</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix <strong>MP3</strong> convert error when video title contains single quote &#39;</li>\n<li>Add <strong>AAC</strong> audio, <strong>Full HD</strong> video download options</li>\n<li>Add menu <strong>Play it only</strong> to prevent auto load related videos</li>\n<li>Fix login error with message &quot;PRECONDITION REQUIRED&quot;</li>\n<li>Fix can&#39;t change settings: Content location, Audio quality on mobile/wifi network</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.10</h2>\n\n<ul>\n<li>Fix <strong>MP3</strong> convert error when video title contains single quote &#39;</li>\n<li>Add <strong>AAC</strong> audio, <strong>Full HD</strong> video download options</li>\n<li>Add menu <strong>Play it only</strong> to prevent auto load related videos</li>\n<li>Fix login error with message &quot;PRECONDITION REQUIRED&quot;</li>\n<li>Fix can&#39;t change settings: Content location, Audio quality on mobile/wifi network</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -122,20 +136,6 @@
         "external": false,
         "device_family": null,
         "id": 175,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3046",
-        "shortversion": "v2.1.9",
-        "title": "YMusic Android",
-        "timestamp": 1510220606,
-        "appsize": 5674180,
-        "notes": "<h2>Version 2.1.9</h2>\n\n<ul>\n<li>[NEW] YouTube Brand Channel sign in</li>\n<li>Bugs fix and improvement</li>\n</ul>\n\n<p><em>After upgrade to new version, current account maybe logout. Please sign in again, sorry about the inconvenience.</em></p>\n",
-        "mandatory": true,
-        "external": false,
-        "device_family": null,
-        "id": 168,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
