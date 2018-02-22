@@ -1,11 +1,25 @@
 [
     {
+        "version": "3090",
+        "shortversion": "v2.4.0",
+        "title": "YMusic Android",
+        "timestamp": 1519223576,
+        "appsize": 6887132,
+        "notes": "<h2>Version 2.4.0</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li><strong>Add Setting options: MP3 encoder and bitrate</strong></li>\n<li>Add remove songs feature (may not work with songs store in SD card)</li>\n<li>Fix can&#39;t play songs have same name</li>\n<li>Fix album art display wrong</li>\n<li>Fix some login issues and app crash</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 206,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3084",
         "shortversion": "v2.3.12",
         "title": "YMusic Android",
         "timestamp": 1518357547,
         "appsize": 6875286,
-        "notes": "<h2>Version 2.3.12</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://youtube-music-by-khang.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Restore FLAC support</li>\n<li>Update download file name format &quot;Artist - Song name&quot;</li>\n<li>Auto scroll song name if it&#39;s too long</li>\n<li>Fix login error </li>\n<li>Fix display wrong album art</li>\n<li>Fix can&#39;t play music when connect to monitored network (e.g using Proxy/VPN/company&#39;s wifi)</li>\n</ul>\n",
+        "notes": "<h2>Version 2.3.12</h2>\n\n<ul>\n<li>Restore FLAC support</li>\n<li>Update download file name format &quot;Artist - Song name&quot;</li>\n<li>Auto scroll song name if it&#39;s too long</li>\n<li>Fix login error </li>\n<li>Fix display wrong album art</li>\n<li>Fix can&#39;t play music when connect to monitored network (e.g using Proxy/VPN/company&#39;s wifi)</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -118,24 +132,10 @@
         "timestamp": 1511375109,
         "appsize": 5923156,
         "notes": "<h2>Version 2.2.0 Beta 2</h2>\n\n<p><strong>Nov 23, 2017</strong></p>\n\n<ul>\n<li>Add <strong>Remove Ad</strong> function</li>\n<li>Bugs fix</li>\n</ul>\n",
-        "mandatory": false,
+        "mandatory": true,
         "external": false,
         "device_family": null,
         "id": 178,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3049",
-        "shortversion": "v2.2.0-beta1",
-        "title": "YMusic Android",
-        "timestamp": 1510346370,
-        "appsize": 5705537,
-        "notes": "<h2>Version 2.2.0 Beta 1</h2>\n\n<p><strong>Nov 11, 2017</strong></p>\n\n<ul>\n<li>Experiment new youtube link extractor which will help to play <strong>VEVO</strong> music video smoother, and fix stop randomly when playing.</li>\n<li>Improve caching capacity to save more data</li>\n</ul>\n",
-        "mandatory": false,
-        "external": false,
-        "device_family": null,
-        "id": 175,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
