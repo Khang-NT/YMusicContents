@@ -1,11 +1,25 @@
 [
     {
+        "version": "3098",
+        "shortversion": "v2.4.4",
+        "title": "YMusic Android",
+        "timestamp": 1525168600,
+        "appsize": 6745939,
+        "notes": "<h2>Version 2.4.4</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://ymusic.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Add Features: \n\n<ul>\n<li>Set playback speed</li>\n<li>Share YouTube link</li>\n<li>Share local music file</li>\n</ul></li>\n<li>Update: Load all YouTube playlist of your account instead of limited at 50 items.</li>\n<li>Fix crash on startup (android 7.0)</li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 219,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3092",
         "shortversion": "v2.4.1",
         "title": "YMusic Android",
         "timestamp": 1521476966,
         "appsize": 6740713,
-        "notes": "<h2>Version 2.4.1</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://ymusic.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /></a><a href=\"https://labs.xda-developers.com/store/app/download/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix load Popular videos error</li>\n<li>Fix play video via share intent not working sometime</li>\n<li>Update some icons</li>\n</ul>\n",
+        "notes": "<h2>Version 2.4.1</h2>\n\n<ul>\n<li>Fix load Popular videos error</li>\n<li>Fix play video via share intent not working sometime</li>\n<li>Update some icons</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -104,7 +118,7 @@
         "timestamp": 1513588642,
         "appsize": 6779608,
         "notes": "<h2>Version 2.3.0</h2>\n\n<p><strong>Dec 18, 2017</strong><br>\n<img src=\"https://i.imgur.com/pXsy8Kv.png\" width=\"250\"></img></p>\n\n<ul>\n<li><strong>Add Shazam support</strong>: browse Shazam chart, artist&#39;s top tracks inside YMusic. Play music from Shazam App by clicking <strong>Share button</strong>.</li>\n<li>Fix critical bugs in music player:\n\n<ul>\n<li>Fix music stop after screen off for a while</li>\n<li>Fix music player crash when play next/previous</li>\n</ul></li>\n<li>UI change:\n\n<ul>\n<li><strong>RTL layout support</strong>: fix broken UI in RTL language.</li>\n<li>Fix can&#39;t scroll playing queue in some device.</li>\n</ul></li>\n<li>Add new section: <strong>Playlist for you</strong> - list of recommended video base on what you play.</li>\n<li>Update YouTube Search:\n\n<ul>\n<li><strong>Add artist&#39;s top track and albums in search result</strong></li>\n<li>Fix display previous search result when rotate screen</li>\n<li>Add <strong>Artist&#39;s Mix videos</strong> in search result</li>\n</ul></li>\n<li>Remove notification sound and vibration in Android O</li>\n<li>Fix can&#39;t update new version in some devices</li>\n<li>Fix crash on start up</li>\n<li><em>Add more bugs to fix later</em></li>\n<li>Stability and performance improvement</li>\n</ul>\n",
-        "mandatory": false,
+        "mandatory": true,
         "external": false,
         "device_family": null,
         "id": 185,
@@ -122,20 +136,6 @@
         "external": false,
         "device_family": null,
         "id": 181,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3053",
-        "shortversion": "v2.2.0-beta3",
-        "title": "YMusic Android",
-        "timestamp": 1512125431,
-        "appsize": 6561531,
-        "notes": "<h2>Version 2.2.0 Beta 3</h2>\n\n<p><strong>Dec 1, 2017</strong></p>\n\n<ul>\n<li>Speed up get link, improve gapless playback</li>\n<li>Fix player doesn&#39;t play next song</li>\n<li>Fix repeat mode not working </li>\n<li>Fix play error in some specific video</li>\n<li>Add &quot;Reward video&quot;</li>\n</ul>\n",
-        "mandatory": true,
-        "external": false,
-        "device_family": null,
-        "id": 179,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
