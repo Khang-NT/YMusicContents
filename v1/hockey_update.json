@@ -6,7 +6,7 @@
         "timestamp": 1529168115,
         "appsize": 6747035,
         "notes": "<h2>Urgent update v2.4.5</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li><strong>Urgent update:</strong> older version won&#39;t work after June 18, 2018.</li>\n<li>Fix startup crash Android 4.x</li>\n</ul>\n",
-        "mandatory": true,
+        "mandatory": false,
         "external": false,
         "device_family": null,
         "id": 223,
