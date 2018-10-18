@@ -1,11 +1,25 @@
 [
     {
+        "version": "3106",
+        "shortversion": "v2.4.7",
+        "title": "YMusic Android",
+        "timestamp": 1539851084,
+        "appsize": 6753055,
+        "notes": "<h2>Version v2.4.7</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix &quot;couldn&#39;t parse window setting&quot;</li>\n<li>Fix youtube music album not working</li>\n<li><em>Fix can&#39;t get account playlist (v2.4.6)</em></li>\n</ul>\n",
+        "mandatory": false,
+        "external": false,
+        "device_family": null,
+        "id": 246,
+        "app_id": 344882,
+        "minimum_os_version": "4.1"
+    },
+    {
         "version": "3102",
         "shortversion": "v2.4.5",
         "title": "YMusic Android",
         "timestamp": 1529168115,
         "appsize": 6747035,
-        "notes": "<h2>Urgent update v2.4.5</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://ymusic.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li><strong>Urgent update:</strong> older version won&#39;t work after June 18, 2018.</li>\n<li>Fix startup crash Android 4.x</li>\n</ul>",
+        "notes": "<h2>Version v2.4.5</h2>\n\n<ul>\n<li>Fix startup crash Android 4.x</li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
@@ -38,20 +52,6 @@
         "external": false,
         "device_family": null,
         "id": 211,
-        "app_id": 344882,
-        "minimum_os_version": "4.1"
-    },
-    {
-        "version": "3090",
-        "shortversion": "v2.4.0",
-        "title": "YMusic Android",
-        "timestamp": 1519223576,
-        "appsize": 6887132,
-        "notes": "<h2>Version 2.4.0</h2>\n\n<ul>\n<li><strong>Add Setting options: MP3 encoder and bitrate</strong></li>\n<li>Add remove songs feature (may not work with songs store in SD card)</li>\n<li>Fix can&#39;t play songs have same name</li>\n<li>Fix album art display wrong</li>\n<li>Fix some login issues and app crash</li>\n</ul>\n",
-        "mandatory": false,
-        "external": false,
-        "device_family": null,
-        "id": 206,
         "app_id": 344882,
         "minimum_os_version": "4.1"
     }
