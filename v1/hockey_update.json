@@ -5,7 +5,7 @@
         "title": "YMusic Android",
         "timestamp": 1539851084,
         "appsize": 6753055,
-        "notes": "<h2>Version v2.4.7</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix &quot;couldn&#39;t parse window setting&quot;</li>\n<li>Fix youtube music album not working</li>\n<li><em>Fix can&#39;t get account playlist (v2.4.6)</em></li>\n</ul>\n",
+        "notes": "<h2>Version v2.4.7</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://ymusic.en.uptodown.com/android/download\"><img src=\"https://music-app.me/img/uptodown_icon.png\" width=\"150\" /><a href=\"https://labs.xda-developers.com/store/app/com.kapp.youtube.final\"><img src=\"https://music-app.me/img/xda_labs_icon.png\" width=\"150\" /></a><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://music-app.me/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Fix &quot;couldn&#39;t parse window setting&quot;</li>\n<li>Fix youtube music album not working</li>\n<li><em>Fix can&#39;t get account playlist (v2.4.6)</em></li>\n</ul>\n",
         "mandatory": false,
         "external": false,
         "device_family": null,
