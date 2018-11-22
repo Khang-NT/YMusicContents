@@ -1,0 +1,21 @@
+{
+  "updateAvailable": true,
+  "versionInt": 3006,
+  "versionName": "v3.0.1",
+  "checksum": "6ce216554f4e451b2c6e36f2da0d3af0",
+  "updateLink": "http://github.com/Khang-NT/YMusicContents/raw/debug/v1/apks/baseRelease-v3.0.1.apk",
+  "updateAltLink": "https://drive.google.com/uc?id=1X9qIjwQNF-lSkoTxaq1ajFtSrisPLyLO&export=download",
+  "whatsNew": [
+    "Inbuilt youtube comments, now you can see, add, like, delete comments on youtube videos from within Videoder",
+    "Subtitles Downloading is here. You can either download subtitle files separately or merge subtitles in the video itself",
+    "Subtitles playback in video detail screen with styling support",
+    "256 kbps mp3 downloading (converted from Highest Quality webm audio source)",
+    "Storyboard preview while seeking videos, now you see a preview image when you seek a video which helps you to seek more precisely",
+    "Removed 100 videos limit in playlist downloader",
+    "A major bug which deleted downloaded files on converting a video has been fixed",
+    "Added translations for Bulgarian, Filipino, Nepali and Kannada. Videoder is now translated in over 40 languages",
+    "Fixed Premium Version verification issue",
+    "Bug fixes"
+  ],
+  "force": false
+}
