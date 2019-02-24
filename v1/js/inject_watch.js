@@ -26,7 +26,7 @@
                         e.stopImmediatePropagation();
                         e.preventDefault();
                     }
-                }, true);
+                }, false);
             }
         }
 
