@@ -17,7 +17,8 @@ If no, tell me your name or email so I will removed you from the list.
 If yes, please fill form below (Note: require translator account with more than 25 strings translated).
 
 - Your name:  
-- Avatar (please upload it into https://imgur.com): 
+- Avatar: 
+(please upload it into https://imgur.com or attach it into this email)
 - Country: 
 - Translated language: 
 - Social profile (optional): 
