@@ -44,5 +44,20 @@
     "joinSince": "01/01/2019",
     "button1Link": "https://www.instagram.com/danielsanchez_2/",
     "button2Link": "mailto:danielsanchezcebrian@gmail.com"
+  },
+  {
+    "country": "Syria",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_linkedin.png",
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
+    "joinSince": "01/01/2019",
+    "button2Link": "https://www.linkedin.com/in/kamel-d-541ab983/",
+    "wordTranslatedCount": 3490,
+    "name": "Kamel Deeb",
+    "button3Link": "mailto:KamelDeeb97@gmail.com",
+    "id": 4,
+    "button3Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "lang": "Arabic Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
+    "button1Link": "https://www.facebook.com/KamelDeeb"
   }
 ]
