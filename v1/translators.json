@@ -59,5 +59,16 @@
     "lang": "Arabic Translator",
     "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
     "button1Link": "https://www.facebook.com/KamelDeeb"
+  },
+  {
+    "country": "Italy",
+    "wordTranslatedCount": 486,
+    "name": "Mario F. Vet",
+    "id": 5,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/5.jpg",
+    "lang": "Italian Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "joinSince": "01/01/2019",
+    "button1Link": "https://www.instagram.com/fuirun0"
   }
 ]
