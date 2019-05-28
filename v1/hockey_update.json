@@ -1,10 +1,10 @@
 [
   {
-    "version": "4122",
-    "shortversion": "v3.2.1",
+    "version": "4124",
+    "shortversion": "v3.2.2",
     "title": "YMusic Android",
     "timestamp": 1543845143,
-    "appsize": 7673624,
+    "appsize": 7701573,
     "notes": "<h2>Version v3.0.0</h2>\n\n<h3>Update via:</h3>\n\n<p><a href=\"https://drive.google.com/a/hcmut.edu.vn/uc?id=0B1-d3Xs9yeFHT2pKeWNrdWpJX1U&amp;export=download\"><img src=\"https://ymusic.io/img/google_drive_icon.png\" width=\"150\" /></a></p>\n\n<ul>\n<li>Revamp UI/UX for your best music experience</li>\n<li>Add play video and subtitle feature</li>\n<li>Add new downloader and in-app converter, allow you download mp3 without installing Media Converter app</li>\n<li>Enhancement background playback</li>\n<li>Add option to play single song</li>\n<li>Add feature create playlist from queue</li>\n<li>Add new login feature, now your favorite music videos and recommendation from YouTube will show up in YMusic</li>\n<li>Now you can see all your playlist after login, include saved playlist under My channel - Playlists</li>\n<li>Allow browsing YouTube channel/playlist out of the box</li>\n<li>Allow subscribe/unsubscribe to channel and playlist</li>\n<li>Remove smart playlist feature</li>\n<li>Add new local playlists: Last added, History, Top Tracks</li>\n<li>Add AMOLED theme</li>\n<li>x2 faster older version</li>\n</ul>\n",
     "mandatory": true,
     "external": false,

@@ -1,0 +1,74 @@
+[
+  {
+    "country": "Brazil",
+    "wordTranslatedCount": 499,
+    "name": "Gabriel Ribeiro",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "id": 0,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/0.jpg",
+    "lang": "Brazilian Portuguese Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_aboutme.png",
+    "joinSince": "03/02/2019",
+    "button1Link": "https://about.me/Gabriel_Ribeiro",
+    "button2Link": "mailto:Gabriel.RibeiroMX@gmail.com"
+  },
+  {
+    "country": "Turkey",
+    "wordTranslatedCount": 885,
+    "name": "Ertan Acar",
+    "id": 1,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/1.jpg",
+    "lang": "Turkish Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_telegram.png",
+    "joinSince": "01/01/2019",
+    "button1Link": "https://t.me/SoNatreX"
+  },
+  {
+    "country": "Russia",
+    "wordTranslatedCount": 1157,
+    "name": "Andrey Guskov (GooseWing)",
+    "id": 2,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/2.jpg",
+    "lang": "Russian Translator",
+    "joinSince": "01/01/2019"
+  },
+  {
+    "country": "Spain",
+    "wordTranslatedCount": 746,
+    "name": "Daniel sanchez",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "id": 3,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/3.jpg",
+    "lang": "Spanish Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "joinSince": "01/01/2019",
+    "button1Link": "https://www.instagram.com/danielsanchez_2/",
+    "button2Link": "mailto:danielsanchezcebrian@gmail.com"
+  },
+  {
+    "country": "Syria",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_linkedin.png",
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
+    "joinSince": "01/01/2019",
+    "button2Link": "https://www.linkedin.com/in/kamel-d-541ab983/",
+    "wordTranslatedCount": 3490,
+    "name": "Kamel Deeb",
+    "button3Link": "mailto:KamelDeeb97@gmail.com",
+    "id": 4,
+    "button3Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "lang": "Arabic Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
+    "button1Link": "https://www.facebook.com/KamelDeeb"
+  },
+  {
+    "country": "Italy",
+    "wordTranslatedCount": 486,
+    "name": "Mario F. Vet",
+    "id": 5,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/5.jpg",
+    "lang": "Italian Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "joinSince": "01/01/2019",
+    "button1Link": "https://www.instagram.com/fuirun0"
+  }
+]
