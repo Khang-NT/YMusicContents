@@ -14,7 +14,7 @@
   },
   {
     "country": "Turkey",
-    "wordTranslatedCount": 885,
+    "wordTranslatedCount": 918,
     "name": "Ertan Acar",
     "id": 1,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/1.jpg",
@@ -25,7 +25,7 @@
   },
   {
     "country": "Russia",
-    "wordTranslatedCount": 1157,
+    "wordTranslatedCount": 1189,
     "name": "Andrey Guskov (GooseWing)",
     "id": 2,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/2.jpg",
@@ -51,7 +51,7 @@
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
     "joinSince": "01/01/2019",
     "button2Link": "https://www.linkedin.com/in/kamel-d-541ab983/",
-    "wordTranslatedCount": 3490,
+    "wordTranslatedCount": 3523,
     "name": "Kamel Deeb",
     "button3Link": "mailto:KamelDeeb97@gmail.com",
     "id": 4,
@@ -62,7 +62,7 @@
   },
   {
     "country": "Italy",
-    "wordTranslatedCount": 486,
+    "wordTranslatedCount": 653,
     "name": "Mario F. Vet",
     "id": 5,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/5.jpg",
@@ -70,5 +70,16 @@
     "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
     "joinSince": "01/01/2019",
     "button1Link": "https://www.instagram.com/fuirun0"
+  },
+  {
+    "country": "South Korea",
+    "wordTranslatedCount": 2588,
+    "name": "Jae woo",
+    "id": 6,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/6.jpg",
+    "lang": "Korean Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "joinSince": "01/05/2019",
+    "button1Link": "mailto:jreset@naver.com"
   }
 ]
