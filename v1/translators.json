@@ -2,6 +2,7 @@
   {
     "country": "Brazil",
     "wordTranslatedCount": 508,
+    "langCode": "pt",
     "name": "Gabriel Ribeiro",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
     "id": 0,
@@ -15,6 +16,7 @@
   {
     "country": "Turkey",
     "wordTranslatedCount": 918,
+    "langCode": "tr",
     "name": "Ertan Acar",
     "id": 1,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/1.jpg",
@@ -26,6 +28,7 @@
   {
     "country": "Russia",
     "wordTranslatedCount": 1189,
+    "langCode": "ru",
     "name": "Andrey Guskov (GooseWing)",
     "id": 2,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/2.jpg",
@@ -35,6 +38,7 @@
   {
     "country": "Spain",
     "wordTranslatedCount": 893,
+    "langCode": "es",
     "name": "Daniel sanchez",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
     "id": 3,
@@ -47,6 +51,7 @@
   },
   {
     "country": "Syria",
+    "langCode": "ar",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_linkedin.png",
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
     "joinSince": "01/01/2019",
@@ -63,6 +68,7 @@
   {
     "country": "Italy",
     "wordTranslatedCount": 653,
+    "langCode": "it",
     "name": "Mario F. Vet",
     "id": 5,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/5.jpg",
@@ -74,6 +80,7 @@
   {
     "country": "South Korea",
     "wordTranslatedCount": 2659,
+    "langCode": "ko",
     "name": "Jae woo",
     "id": 6,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/6.jpg",
@@ -85,6 +92,7 @@
   {
     "country": "Japan",
     "wordTranslatedCount": 3219,
+    "langCode": "ja",
     "name": "Tsuki Takamiya",
     "id": 7,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/7.jpg",
@@ -92,5 +100,15 @@
     "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_twitter.png",
     "joinSince": "05/31/2019",
     "button1Link": "https://twitter.com/Tsuki3842"
+  },
+  {
+    "country": "Greece",
+    "wordTranslatedCount": 1694,
+    "langCode": "el",
+    "name": "Theodoros Ioannou",
+    "id": 8,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/8.jpg",
+    "lang": "Greek Translator",
+    "joinSince": "05/28/2019"
   }
 ]
