@@ -1,7 +1,7 @@
 [
   {
     "country": "Brazil",
-    "wordTranslatedCount": 499,
+    "wordTranslatedCount": 508,
     "name": "Gabriel Ribeiro",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
     "id": 0,
@@ -34,7 +34,7 @@
   },
   {
     "country": "Spain",
-    "wordTranslatedCount": 746,
+    "wordTranslatedCount": 893,
     "name": "Daniel sanchez",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
     "id": 3,
@@ -73,7 +73,7 @@
   },
   {
     "country": "South Korea",
-    "wordTranslatedCount": 2588,
+    "wordTranslatedCount": 2659,
     "name": "Jae woo",
     "id": 6,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/6.jpg",
@@ -81,5 +81,16 @@
     "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
     "joinSince": "01/05/2019",
     "button1Link": "mailto:jreset@naver.com"
+  },
+  {
+    "country": "Japan",
+    "wordTranslatedCount": 3219,
+    "name": "Tsuki Takamiya",
+    "id": 7,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/7.jpg",
+    "lang": "Japanese Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_twitter.png",
+    "joinSince": "05/31/2019",
+    "button1Link": "https://twitter.com/Tsuki3842"
   }
 ]
