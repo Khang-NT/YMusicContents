@@ -79,7 +79,7 @@
   },
   {
     "country": "South Korea",
-    "wordTranslatedCount": 2659,
+    "wordTranslatedCount": 2680,
     "langCode": "ko",
     "name": "Jae woo",
     "id": 6,
@@ -91,7 +91,7 @@
   },
   {
     "country": "Japan",
-    "wordTranslatedCount": 3219,
+    "wordTranslatedCount": 3414,
     "langCode": "ja",
     "name": "Tsuki Takamiya",
     "id": 7,
@@ -103,12 +103,26 @@
   },
   {
     "country": "Greece",
-    "wordTranslatedCount": 1694,
+    "wordTranslatedCount": 1729,
     "langCode": "el",
     "name": "Theodoros Ioannou",
     "id": 8,
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/8.jpg",
     "lang": "Greek Translator",
     "joinSince": "05/28/2019"
+  },
+  {
+    "country": "Brazil",
+    "wordTranslatedCount": 3078,
+    "langCode": "pt",
+    "name": "Mateus Xavier",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "id": 10,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/10.jpg",
+    "lang": "Brazilian Portuguese Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
+    "joinSince": "01/03/2019",
+    "button1Link": "https://www.facebook.com/mateus.xavier.16121",
+    "button2Link": "https://www.instagram.com/matthewxaviers"
   }
 ]
