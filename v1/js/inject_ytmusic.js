@@ -291,6 +291,10 @@
                     setTimeout(resetPlayer, 500);
                     return playCommand(playlistId.substring(4), playlistId, shuffle);
                 }
+                if (playlistId.indexOf("RDAMVM") === 0 && playlistId.length == 17) {
+                    setTimeout(resetPlayer, 500);
+                    return playCommand(playlistId.substring(6), playlistId, shuffle);
+                }
                 let isMyMix = playlistId === "RDMM";
                 let isChannelRadio = playlistId.indexOf("RD") === 0 && playlistId.length == 26;
                 let isMyLibrary = playlistId == "MLCT";
