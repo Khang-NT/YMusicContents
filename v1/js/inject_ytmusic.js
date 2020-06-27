@@ -49,7 +49,7 @@
             && temp[0].accountService_
             && temp[0].accountService_.cachedGetAccountMenuRequestPromise
             && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_
-            && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_.code == "SUCCESS") {
+            && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_.code === "SUCCESS") {
             let result = temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_;
             let actions = result.data.actions;
             let sections = [];
@@ -63,7 +63,7 @@
             if (sections.length) {
                 sections[0].multiPageMenuSectionRenderer.items = sections[0].multiPageMenuSectionRenderer.items.filter((item) => {
                     let iconType = item.compactLinkRenderer.icon.iconType;
-                    return iconType == "ACCOUNT_BOX" || iconType == "SWITCH_ACCOUNTS" || iconType == "EXIT_TO_APP";
+                    return iconType === "ACCOUNT_BOX" || iconType === "SWITCH_ACCOUNTS" || iconType === "EXIT_TO_APP";
                 });
                 while (sections.length > 1) sections.pop();
                 return
@@ -125,8 +125,8 @@
                     }
                     let type = data.type;
                     let payload = data.payload;
-                    if (type == "SET_PLAYER_UI_STATE" && payload != "INACTIVE"
-                        || type == "SET_PLAYER_PAGE_INFO" && payload && payload.open) {
+                    if (type === "SET_PLAYER_UI_STATE" && payload !== "INACTIVE"
+                        || type === "SET_PLAYER_PAGE_INFO" && payload && payload.open) {
                         return;
                     }
                     originDispatch.call(playerUiService_.store, data);
@@ -226,19 +226,18 @@
         console.log(WATCH_COMMAND_PREFIX + JSON.stringify({
             videoId: videoId,
             playlistId: playlistId,
-            shuffle: shuffle != undefined ? shuffle : false
+            shuffle: shuffle != null ? shuffle : false
         }));
     }
 
     (function (originSend) {
-        var lastPlayCommand = [null, null];
         XMLHttpRequest.prototype.send = function (body) {
             let self = this;
             let oldOnReadyStateChange = this.onreadystatechange;
             this.onreadystatechange = function () {
                 if (self._waitForRadioMyMix) {
-                    if (self.readyState == 4) {
-                        if (self.status == 200) {
+                    if (self.readyState === 4) {
+                        if (self.status === 200) {
                             try {
                                 let watchEndpoint = JSON.parse(self.responseText).currentVideoEndpoint.watchEndpoint;
                                 if (watchEndpoint.videoId && watchEndpoint.playlistId) {
@@ -252,7 +251,7 @@
                     return;
                 }
                 if (self._waitForShare) {
-                    if (self.readyState == 4 && self.status == 200) {
+                    if (self.readyState === 4 && self.status === 200) {
                         try {
                             let url = JSON.parse(self.responseText).actions[0].openPopupAction
                                 .popup.unifiedSharePanelRenderer.contents[0].thirdPartyNetworkSection
@@ -264,7 +263,7 @@
                     return;
                 }
                 if (oldOnReadyStateChange) oldOnReadyStateChange.call(self);
-            }
+            };
 
             if (self._url && self._url.indexOf("/get_share_panel") > -1) {
                 self._waitForShare = true;
@@ -287,18 +286,18 @@
                     setTimeout(resetPlayer, 500);
                     return playCommand(videoId, playlistId, shuffle);
                 }
-                if (playlistId.indexOf("RDMM") === 0 && playlistId.length == 15) {
+                if (playlistId.indexOf("RDMM") === 0 && playlistId.length === 15) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(playlistId.substring(4), playlistId, shuffle);
                 }
-                if (playlistId.indexOf("RDAMVM") === 0 && playlistId.length == 17) {
+                if (playlistId.indexOf("RDAMVM") === 0 && playlistId.length === 17) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(playlistId.substring(6), playlistId, shuffle);
                 }
                 let isMyMix = playlistId === "RDMM";
-                let isChannelRadio = playlistId.indexOf("RD") === 0 && playlistId.length == 26;
-                let isMyLibrary = playlistId == "MLCT";
-                let isMyLikes = playlistId == "LM";
+                let isChannelRadio = playlistId.indexOf("RD") === 0 && playlistId.length === 26;
+                let isMyLibrary = playlistId.indexOf("ML") === 0;
+                let isMyLikes = playlistId === "LM";
                 if (!isMyMix && !isChannelRadio && !isMyLibrary && !isMyLikes) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(null, playlistId, shuffle);
