@@ -15,7 +15,7 @@
   },
   {
     "country": "Turkey",
-    "wordTranslatedCount": 918,
+    "wordTranslatedCount": 884,
     "langCode": "tr",
     "name": "Ertan Acar",
     "id": 1,
@@ -27,7 +27,7 @@
   },
   {
     "country": "Russia",
-    "wordTranslatedCount": 1189,
+    "wordTranslatedCount": 1155,
     "langCode": "ru",
     "name": "Andrey Guskov (GooseWing)",
     "id": 2,
@@ -37,7 +37,7 @@
   },
   {
     "country": "Spain",
-    "wordTranslatedCount": 893,
+    "wordTranslatedCount": 791,
     "langCode": "es",
     "name": "Daniel sanchez",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
@@ -56,7 +56,7 @@
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
     "joinSince": "01/01/2019",
     "button2Link": "https://www.linkedin.com/in/kamel-d-541ab983/",
-    "wordTranslatedCount": 3523,
+    "wordTranslatedCount": 3559,
     "name": "Kamel Deeb",
     "button3Link": "mailto:KamelDeeb97@gmail.com",
     "id": 4,
@@ -79,7 +79,7 @@
   },
   {
     "country": "South Korea",
-    "wordTranslatedCount": 2680,
+    "wordTranslatedCount": 3024,
     "langCode": "ko",
     "name": "Jae woo",
     "id": 6,
@@ -91,7 +91,7 @@
   },
   {
     "country": "Japan",
-    "wordTranslatedCount": 3414,
+    "wordTranslatedCount": 4225,
     "langCode": "ja",
     "name": "Tsuki Takamiya",
     "id": 7,
@@ -103,7 +103,7 @@
   },
   {
     "country": "Greece",
-    "wordTranslatedCount": 1729,
+    "wordTranslatedCount": 1711,
     "langCode": "el",
     "name": "Theodoros Ioannou",
     "id": 8,
@@ -112,8 +112,22 @@
     "joinSince": "05/28/2019"
   },
   {
+    "country": "Scotland",
+    "wordTranslatedCount": 194,
+    "langCode": "pl",
+    "name": "Ireek",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "id": 9,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/9.jpg",
+    "lang": "Polish Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_youtube.png",
+    "joinSince": "06/26/2019",
+    "button1Link": "https://www.youtube.com/user/SoundSuckR",
+    "button2Link": "mailto:ireneuszniwinski@gmail.com"
+  },
+  {
     "country": "Brazil",
-    "wordTranslatedCount": 3078,
+    "wordTranslatedCount": 3088,
     "langCode": "pt",
     "name": "Mateus Xavier",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
