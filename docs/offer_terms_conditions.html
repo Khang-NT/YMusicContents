@@ -4,7 +4,10 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
     <title>YMusic - Terms and conditions</title>
-    <style>body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; }
+    <style>body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 1em;
+    }
     </style>
 </head>
 <body>
@@ -19,5 +22,17 @@
 </p>
 <p>YMusic is committed to not saving any of your login information or cookies, and not posting any
     articles on your behalf.</p>
+
+<br>
+<a id="translate" style="display: none">translate.google.com</a>
+
+<script type="text/javascript">
+    let a = document.getElementById("translate");
+    if (navigator.language !== "vi") {
+        a.style.display = "block";
+        a.href = "https://translate.google.com/translate?sl=en&u=" + encodeURIComponent(window.location.href) +
+            "&tl=" + navigator.language + "&hl=" + navigator.language;
+    }
+</script>
 </body>
 </html>
