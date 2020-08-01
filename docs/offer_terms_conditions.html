@@ -28,7 +28,7 @@
 
 <script type="text/javascript">
     let a = document.getElementById("translate");
-    if (navigator.language !== "vi") {
+    if (navigator.language !== "en") {
         a.style.display = "block";
         a.href = "https://translate.google.com/translate?sl=en&u=" + encodeURIComponent(window.location.href) +
             "&tl=" + navigator.language + "&hl=" + navigator.language;
