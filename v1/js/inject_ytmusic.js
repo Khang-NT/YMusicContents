@@ -1,4 +1,5 @@
 (function (document) {
+    'use strict';
     if (document.ymusicInitialized) {
         return
     }
@@ -40,21 +41,22 @@
             console.log("ymusic_open_nav:{}");
         });
     }
+
     mockLeftContent();
 
     function mockAccountService() {
-        let temp = document.getElementsByTagName("ytmusic-settings-button");
+        var temp = document.getElementsByTagName("ytmusic-settings-button");
         if (temp.length
             && temp[0]
             && temp[0].accountService_
             && temp[0].accountService_.cachedGetAccountMenuRequestPromise
             && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_
             && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_.code === "SUCCESS") {
-            let result = temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_;
-            let actions = result.data.actions;
-            let sections = [];
-            for (let index = 0; index < actions.length; index++) {
-                const element = actions[index];
+            var result = temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_;
+            var actions = result.data.actions;
+            var sections = [];
+            for (var index = 0; index < actions.length; index++) {
+                var element = actions[index];
                 if (element.openPopupAction) {
                     sections = element.openPopupAction.popup.multiPageMenuRenderer.sections;
                     break;
@@ -62,7 +64,7 @@
             }
             if (sections.length) {
                 sections[0].multiPageMenuSectionRenderer.items = sections[0].multiPageMenuSectionRenderer.items.filter((item) => {
-                    let iconType = item.compactLinkRenderer.icon.iconType;
+                    var iconType = item.compactLinkRenderer.icon.iconType;
                     return iconType === "ACCOUNT_BOX" || iconType === "SWITCH_ACCOUNTS" || iconType === "EXIT_TO_APP";
                 });
                 while (sections.length > 1) sections.pop();
@@ -75,9 +77,8 @@
                 temp = document.getElementById("right-content");
                 if (temp) {
                     temp = temp.getElementsByTagName("paper-icon-button");
-                    for (let index = 0; index < temp.length; index++) {
-                        const element = temp[index];
-                        element.hidden = true;
+                    for (var index = 0; index < temp.length; index++) {
+                        temp[index].hidden = true;
                     }
                 }
             }
@@ -85,14 +86,15 @@
 
         setTimeout(mockAccountService, 100);
     }
+
     mockAccountService();
 
 
     function removeElement(query) {
         var elements = query();
         var ok = false;
-        for (let index = 0; index < elements.length; index++) {
-            const element = elements[index];
+        for (var index = 0; index < elements.length; index++) {
+            var element = elements[index];
             if (element) {
                 element.parentNode.removeChild(element);
                 console.log("Removed " + element.tagName);
@@ -112,9 +114,10 @@
     // removeElement(() => document.getElementsByTagName("ytmusic-popup-container"));
 
     var playerUiService = null;
+
     function setUpPlayerUiService() {
-        let elements = document.getElementsByTagName("ytmusic-app-layout");
-        let playerUiService_ = elements.length ? elements[0].playerUiService_ : null;
+        var elements = document.getElementsByTagName("ytmusic-app-layout");
+        var playerUiService_ = elements.length ? elements[0].playerUiService_ : null;
         if (playerUiService_ && !playerUiService_.mockedStore && playerUiService_.store && playerUiService_.store.dispatch) {
             playerUiService_.mockedStore = true;
             (function (originDispatch) {
@@ -123,8 +126,8 @@
                     if (!data || !data.type) {
                         return;
                     }
-                    let type = data.type;
-                    let payload = data.payload;
+                    var type = data.type;
+                    var payload = data.payload;
                     if (type === "SET_PLAYER_UI_STATE" && payload !== "INACTIVE"
                         || type === "SET_PLAYER_PAGE_INFO" && payload && payload.open) {
                         return;
@@ -137,6 +140,7 @@
             setTimeout(setUpPlayerUiService, 100);
         }
     }
+
     setUpPlayerUiService();
 
     function resetPlayer() {
@@ -144,7 +148,7 @@
             return;
         }
         console.log("Reset player");
-        let actions = [
+        var actions = [
             () => {
                 playerUiService.store.dispatch({
                     type: "SET_IS_GENERATING",
@@ -181,7 +185,7 @@
                     if (playerUiService.playerApi.stopVideo) playerUiService.playerApi.stopVideo();
                 }
             }
-        ]
+        ];
 
         var delay = 100;
         actions.forEach(action => {
@@ -190,9 +194,9 @@
         });
 
         setTimeout(() => {
-            let buttons = document.getElementsByTagName("ytmusic-play-button-renderer");
-            for (let index = 0; index < buttons.length; index++) {
-                const button = buttons[index];
+            var buttons = document.getElementsByTagName("ytmusic-play-button-renderer");
+            for (var index = 0; index < buttons.length; index++) {
+                var button = buttons[index];
                 button.setAttribute("state", "default");
             }
         }, 3000);
@@ -207,7 +211,7 @@
 
     (function (originAddEventListener) {
         XMLHttpRequest.prototype.addEventListener = function (name, callback) {
-            let self = this;
+            var self = this;
             originAddEventListener.call(self, name, () => {
                 if (self._url && (
                     self._url.indexOf("/youtubei/v1/next") > -1
@@ -221,7 +225,8 @@
         };
     })(XMLHttpRequest.prototype.addEventListener);
 
-    const WATCH_COMMAND_PREFIX = "ymusic_watch:";
+    var WATCH_COMMAND_PREFIX = "ymusic_watch:";
+
     function playCommand(videoId, playlistId, shuffle) {
         console.log(WATCH_COMMAND_PREFIX + JSON.stringify({
             videoId: videoId,
@@ -232,14 +237,14 @@
 
     (function (originSend) {
         XMLHttpRequest.prototype.send = function (body) {
-            let self = this;
-            let oldOnReadyStateChange = this.onreadystatechange;
+            var self = this;
+            var oldOnReadyStateChange = this.onreadystatechange;
             this.onreadystatechange = function () {
                 if (self._waitForRadioMyMix) {
                     if (self.readyState === 4) {
                         if (self.status === 200) {
                             try {
-                                let watchEndpoint = JSON.parse(self.responseText).currentVideoEndpoint.watchEndpoint;
+                                var watchEndpoint = JSON.parse(self.responseText).currentVideoEndpoint.watchEndpoint;
                                 if (watchEndpoint.videoId && watchEndpoint.playlistId) {
                                     playCommand(watchEndpoint.videoId, watchEndpoint.playlistId, self._shuffle);
                                 }
@@ -253,7 +258,7 @@
                 if (self._waitForShare) {
                     if (self.readyState === 4 && self.status === 200) {
                         try {
-                            let url = JSON.parse(self.responseText).actions[0].openPopupAction
+                            var url = JSON.parse(self.responseText).actions[0].openPopupAction
                                 .popup.unifiedSharePanelRenderer.contents[0].thirdPartyNetworkSection
                                 .copyLinkContainer.copyLinkRenderer.shortUrl;
                             console.log("ymusic_share:" + url);
@@ -276,12 +281,12 @@
             }
 
             if (self._url && self._url.indexOf("/youtubei/v1/next") > -1) {
-                let bodyData = JSON.parse(body);
+                var bodyData = JSON.parse(body);
                 console.log(bodyData);
-                let shuffle = typeof bodyData.params == "string" && bodyData.params.indexOf("wAEB8gECGAE") > -1;
+                var shuffle = typeof bodyData.params == "string" && bodyData.params.indexOf("wAEB8gECGAE") > -1;
                 self._shuffle = shuffle;
-                let playlistId = bodyData.playlistId;
-                let videoId = bodyData.videoId;
+                var playlistId = bodyData.playlistId;
+                var videoId = bodyData.videoId;
                 if (videoId) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(videoId, playlistId, shuffle);
@@ -294,10 +299,10 @@
                     setTimeout(resetPlayer, 500);
                     return playCommand(playlistId.substring(6), playlistId, shuffle);
                 }
-                let isMyMix = playlistId === "RDMM";
-                let isChannelRadio = playlistId.indexOf("RD") === 0 && playlistId.length === 26;
-                let isMyLibrary = playlistId.indexOf("ML") === 0;
-                let isMyLikes = playlistId === "LM";
+                var isMyMix = playlistId === "RDMM";
+                var isChannelRadio = playlistId.indexOf("RD") === 0 && playlistId.length === 26;
+                var isMyLibrary = playlistId.indexOf("ML") === 0;
+                var isMyLikes = playlistId === "LM";
                 if (!isMyMix && !isChannelRadio && !isMyLibrary && !isMyLikes) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(null, playlistId, shuffle);
