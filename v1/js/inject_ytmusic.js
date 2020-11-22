@@ -5,7 +5,7 @@
     }
     var head = document.head;
     if (!head) {
-        let temp = document.getElementsByTagName('head');
+        var temp = document.getElementsByTagName('head');
         if (temp && temp.length) {
             head = temp[0];
         }
