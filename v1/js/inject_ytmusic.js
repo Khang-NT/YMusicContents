@@ -3,15 +3,24 @@
     if (!document) {
         return;
     }
+    var head = document.head;
+    if (!head) {
+        let temp = document.getElementsByTagName('head');
+        if (temp && temp.length) {
+            head = temp[0];
+        }
+    }
+    if (!head) {
+        return;
+    }
     if (document.ymusicInitialized) {
         return;
     }
 
     document.ymusicInitialized = true;
 
-    var css = 'ytmusic-menu-service-item-renderer, paper-dialog { display: none; visibility: invisible; }',
-        head = document.head || document.getElementsByTagName('head')[0],
-        style = document.createElement('style');
+    var css = 'ytmusic-menu-service-item-renderer, paper-dialog { display: none; visibility: invisible; }';
+    var style = document.createElement('style');
 
     head.appendChild(style);
 
