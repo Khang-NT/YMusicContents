@@ -1,8 +1,12 @@
 (function (document) {
-    'use strict';
-    if (document.ymusicInitialized) {
-        return
+    "use strict";
+    if (!document) {
+        return;
     }
+    if (document.ymusicInitialized) {
+        return;
+    }
+
     document.ymusicInitialized = true;
 
     var css = 'ytmusic-menu-service-item-renderer, paper-dialog { display: none; visibility: invisible; }',
@@ -46,12 +50,12 @@
 
     function mockAccountService() {
         var temp = document.getElementsByTagName("ytmusic-settings-button");
-        if (temp.length
-            && temp[0]
-            && temp[0].accountService_
-            && temp[0].accountService_.cachedGetAccountMenuRequestPromise
-            && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_
-            && temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_.code === "SUCCESS") {
+        if (temp.length &&
+            temp[0] &&
+            temp[0].accountService_ &&
+            temp[0].accountService_.cachedGetAccountMenuRequestPromise &&
+            temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_ &&
+            temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_.code === "SUCCESS") {
             var result = temp[0].accountService_.cachedGetAccountMenuRequestPromise.result_;
             var actions = result.data.actions;
             var sections = [];
@@ -63,12 +67,13 @@
                 }
             }
             if (sections.length) {
-                sections[0].multiPageMenuSectionRenderer.items = sections[0].multiPageMenuSectionRenderer.items.filter((item) => {
-                    var iconType = item.compactLinkRenderer.icon.iconType;
-                    return iconType === "ACCOUNT_BOX" || iconType === "SWITCH_ACCOUNTS" || iconType === "EXIT_TO_APP";
-                });
+                sections[0].multiPageMenuSectionRenderer.items =
+                    sections[0].multiPageMenuSectionRenderer.items.filter(function (item) {
+                        var iconType = item.compactLinkRenderer.icon.iconType;
+                        return iconType === "ACCOUNT_BOX" || iconType === "SWITCH_ACCOUNTS" || iconType === "EXIT_TO_APP";
+                    });
                 while (sections.length > 1) sections.pop();
-                return
+                return;
             }
         }
 
@@ -77,8 +82,8 @@
                 temp = document.getElementById("right-content");
                 if (temp) {
                     temp = temp.getElementsByTagName("paper-icon-button");
-                    for (var index = 0; index < temp.length; index++) {
-                        temp[index].hidden = true;
+                    for (var i = 0; i < temp.length; i++) {
+                        temp[i].hidden = true;
                     }
                 }
             }
@@ -103,14 +108,24 @@
         }
 
         if (!ok) {
-            setTimeout(() => removeElement(query), 100);
+            setTimeout(function () {
+                return removeElement(query);
+            }, 100);
         }
     }
 
-    removeElement(() => document.getElementsByTagName("ytmusic-player-page"));
-    removeElement(() => document.getElementsByClassName("fullscreen-overlay"));
-    removeElement(() => [document.getElementById("player-bar-background")]);
-    removeElement(() => document.getElementsByTagName("ytmusic-player-bar"));
+    removeElement(function () {
+        return document.getElementsByTagName("ytmusic-player-page");
+    });
+    removeElement(function () {
+        return document.getElementsByClassName("fullscreen-overlay");
+    });
+    removeElement(function () {
+        return [document.getElementById("player-bar-background")];
+    });
+    removeElement(function () {
+        return document.getElementsByTagName("ytmusic-player-bar");
+    });
     // removeElement(() => document.getElementsByTagName("ytmusic-popup-container"));
 
     var playerUiService = null;
@@ -128,12 +143,12 @@
                     }
                     var type = data.type;
                     var payload = data.payload;
-                    if (type === "SET_PLAYER_UI_STATE" && payload !== "INACTIVE"
-                        || type === "SET_PLAYER_PAGE_INFO" && payload && payload.open) {
+                    if (type === "SET_PLAYER_UI_STATE" && payload !== "INACTIVE" ||
+                        type === "SET_PLAYER_PAGE_INFO" && payload && payload.open) {
                         return;
                     }
                     originDispatch.call(playerUiService_.store, data);
-                }
+                };
             })(playerUiService_.store.dispatch);
             playerUiService = playerUiService_;
         } else {
@@ -149,13 +164,13 @@
         }
         console.log("Reset player");
         var actions = [
-            () => {
+            function () {
                 playerUiService.store.dispatch({
                     type: "SET_IS_GENERATING",
                     payload: false
                 });
             },
-            () => {
+            function () {
                 playerUiService.store.dispatch({
                     type: "SET_PLAYER_PAGE_INFO",
                     payload: {
@@ -163,24 +178,24 @@
                     }
                 });
             },
-            () => {
+            function () {
                 playerUiService.store.dispatch({
                     type: "SET_PLAYER_UI_STATE",
                     payload: "HIDDEN"
                 });
             },
-            () => {
+            function () {
                 playerUiService.store.dispatch({
                     type: "CLEAR"
                 });
             },
-            () => {
+            function () {
                 playerUiService.store.dispatch({
                     type: "SET_PLAYER_UI_STATE",
                     payload: "HIDDEN"
                 });
             },
-            () => {
+            function () {
                 if (playerUiService.playerApi) {
                     if (playerUiService.playerApi.stopVideo) playerUiService.playerApi.stopVideo();
                 }
@@ -188,12 +203,12 @@
         ];
 
         var delay = 100;
-        actions.forEach(action => {
+        actions.forEach(function (action) {
             setTimeout(action, delay);
             delay += 100;
         });
 
-        setTimeout(() => {
+        setTimeout(function () {
             var buttons = document.getElementsByTagName("ytmusic-play-button-renderer");
             for (var index = 0; index < buttons.length; index++) {
                 var button = buttons[index];
@@ -212,12 +227,12 @@
     (function (originAddEventListener) {
         XMLHttpRequest.prototype.addEventListener = function (name, callback) {
             var self = this;
-            originAddEventListener.call(self, name, () => {
+            originAddEventListener.call(self, name, function () {
                 if (self._url && (
-                    self._url.indexOf("/youtubei/v1/next") > -1
-                    || self._url.indexOf("/get_video_info") > -1
-                    || self._url.indexOf("/get_queue") > -1
-                    || self._url.indexOf("/get_share_panel") > -1)) {
+                    self._url.indexOf("/youtubei/v1/next") > -1 ||
+                    self._url.indexOf("/get_video_info") > -1 ||
+                    self._url.indexOf("/get_queue") > -1 ||
+                    self._url.indexOf("/get_share_panel") > -1)) {
                     return;
                 }
                 callback.call(self);
