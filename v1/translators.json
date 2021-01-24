@@ -1,7 +1,7 @@
 [
   {
     "country": "Brazil",
-    "wordTranslatedCount": 508,
+    "wordTranslatedCount": 544,
     "langCode": "pt",
     "name": "Gabriel Ribeiro",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
@@ -15,7 +15,7 @@
   },
   {
     "country": "Turkey",
-    "wordTranslatedCount": 884,
+    "wordTranslatedCount": 979,
     "langCode": "tr",
     "name": "Ertan Acar",
     "id": 1,
@@ -27,7 +27,7 @@
   },
   {
     "country": "Russia",
-    "wordTranslatedCount": 1155,
+    "wordTranslatedCount": 1263,
     "langCode": "ru",
     "name": "Andrey Guskov (GooseWing)",
     "id": 2,
@@ -37,7 +37,7 @@
   },
   {
     "country": "Spain",
-    "wordTranslatedCount": 791,
+    "wordTranslatedCount": 886,
     "langCode": "es",
     "name": "Daniel sanchez",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
@@ -56,7 +56,7 @@
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
     "joinSince": "01/01/2019",
     "button2Link": "https://www.linkedin.com/in/kamel-d-541ab983/",
-    "wordTranslatedCount": 3559,
+    "wordTranslatedCount": 4025,
     "name": "Kamel Deeb",
     "button3Link": "mailto:KamelDeeb97@gmail.com",
     "id": 4,
@@ -79,7 +79,7 @@
   },
   {
     "country": "South Korea",
-    "wordTranslatedCount": 3024,
+    "wordTranslatedCount": 3087,
     "langCode": "ko",
     "name": "Jae woo",
     "id": 6,
@@ -91,7 +91,7 @@
   },
   {
     "country": "Japan",
-    "wordTranslatedCount": 4225,
+    "wordTranslatedCount": 4991,
     "langCode": "ja",
     "name": "Tsuki Takamiya",
     "id": 7,
@@ -103,7 +103,7 @@
   },
   {
     "country": "Greece",
-    "wordTranslatedCount": 1711,
+    "wordTranslatedCount": 1848,
     "langCode": "el",
     "name": "Theodoros Ioannou",
     "id": 8,
@@ -127,7 +127,7 @@
   },
   {
     "country": "Brazil",
-    "wordTranslatedCount": 3088,
+    "wordTranslatedCount": 3147,
     "langCode": "pt",
     "name": "Mateus Xavier",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
@@ -138,5 +138,35 @@
     "joinSince": "01/03/2019",
     "button1Link": "https://www.facebook.com/mateus.xavier.16121",
     "button2Link": "https://www.instagram.com/matthewxaviers"
+  },
+  {
+    "country": "Ethiopia",
+    "langCode": "so",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_telegram.png",
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/11.jpg",
+    "joinSince": "12/12/2020",
+    "button2Link": "https://t.me/nadiration",
+    "wordTranslatedCount": 4541,
+    "name": "Nadir Nour",
+    "button3Link": "mailto:nadirnour99@hotmail.com",
+    "id": 11,
+    "button3Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
+    "lang": "Somali Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
+    "button1Link": "https://www.facebook.com/iam2N"
+  },
+  {
+    "country": "Germany",
+    "wordTranslatedCount": 1292,
+    "langCode": "de",
+    "name": "DasOni",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_youtube.png",
+    "id": 12,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/12.jpg",
+    "lang": "German Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "joinSince": "01/01/2019",
+    "button1Link": "https://www.instagram.com/das_oni",
+    "button2Link": "https://www.youtube.com/channel/UCgBfOl5LTB0lMCG5yWa473w"
   }
 ]
