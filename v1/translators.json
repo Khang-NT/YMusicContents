@@ -154,5 +154,19 @@
     "lang": "Somali Translator",
     "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
     "button1Link": "https://www.facebook.com/iam2N"
+  },
+  {
+    "country": "Germany",
+    "wordTranslatedCount": 1292,
+    "langCode": "de",
+    "name": "DasOni",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_youtube.png",
+    "id": 12,
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/12.jpg",
+    "lang": "German Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "joinSince": "01/01/2019",
+    "button1Link": "https://www.instagram.com/das_oni",
+    "button2Link": "https://www.youtube.com/channel/UCgBfOl5LTB0lMCG5yWa473w"
   }
 ]
