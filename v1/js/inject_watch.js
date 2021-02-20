@@ -11,6 +11,8 @@
                 ".player-size { display: none; }\n" +
                 "ytm-item-section-renderer[section-identifier=\"related-items\"] { display: none; }\n" +
                 "ytm-header-bar { display: none; }\n" +
+                "ytm-promoted-sparkles-web-renderer { display: none !important; }\n" +
+                "ytm-companion-ad-renderer { display: none !important; }\n" +
                 ".sticky-player { padding-top: 0; }\n" +
                 "ytm-app.sticky-player { padding-top: 0; }\n";
     let body = document.getElementsByTagName("body")[0];
