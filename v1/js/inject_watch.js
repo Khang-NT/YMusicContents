@@ -14,6 +14,7 @@
                 "ytm-promoted-sparkles-web-renderer { display: none !important; }\n" +
                 "ytm-companion-ad-renderer { display: none !important; }\n" +
                 ".sticky-player { padding-top: 0; }\n" +
+                "ytm-engagement-panel { top: 0 !important; }\n" +
                 "ytm-app.sticky-player { padding-top: 0; }\n";
     let body = document.getElementsByTagName("body")[0];
     body.insertBefore(style, null);
