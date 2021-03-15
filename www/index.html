@@ -1,0 +1,201 @@
+<!doctype html>
+<!--suppress CommaExpressionJS -->
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <title>YMusic download and listen YouTube video in background - Android</title>
+    <meta name="description" content="Listen to your favorite music video in YouTube and Shazam without comsume addition data for loading video stream, why not?
+    One click to download video with multiple formats. Enjoy music unlimited now! YMusic Android">
+    <meta name="keywords" content="ymusic, music app android, listen youtube, download youtube, play youtube background">
+
+    <!--Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78093029-6"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-78093029-6');
+        ga('create', 'UA-78093029-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--End Google Analytics -->
+
+    <meta name="google-site-verification" content="UDGQGIKi2CYF_3UwOvQUitLVfc3yp7RfkJAhIkZNhZk" />
+</head>
+<body>
+<div id="fb-root"></div>
+
+<!--Facebook like box-->
+<script>
+    (function (d, s, id) {
+        let js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=1919251501692842";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<header class="cd-header">
+    <div id="cd-logo"><img src="img/ymusic_logo_text.png" alt="Logo"></div>
+    <div id="cd-action"><a href="https://apkdrive.io/static/apk/4232_ymusic.apk" class="btn download">Download</a></div>
+</header>
+
+<div id="snackbar">Download will start shortly..</div>
+
+<main class="cd-main-content">
+    <div class="cd-product-intro">
+        <h1>YMusic Android</h1>
+        <p>Super convenient music app for you, enjoy music from YouTube with smallest consumed data! Click Download to
+            get latest APK file.</p>
+
+        <div class="fb-like" data-href="https://www.facebook.com/ymusic.android"
+             data-width="200"
+             data-layout="standard" data-action="like"
+             data-size="small" data-share="true"
+             data-show-faces="false" data-colorscheme="dark"></div>
+
+        <div class="cd-triggers">
+            <a href="https://apkdrive.io/static/apk/4232_ymusic.apk" class="btn download">Download</a>
+            <a href="#cd-product-tour" class="btn salmon" data-type="cd-tour">Start</a>
+        </div>
+
+    </div> <!-- cd-product-intro -->
+
+    <div id="cd-product-tour">
+        <ul>
+            <li class="cd-single-item cd-active">
+                <div class="cd-caption">
+                    <h2>What a great feature</h2>
+                    <p>YMusic play only audio of YouTube video in background, save up to 90% consumed data.<br>
+                        You will no longer worry about playing YouTube music with slow network connection, and spending
+                        a lot of data transfer cost every month.
+                    </p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-1.png" data-video="video/video-1-rotated-resized-15s"
+                                 alt="Screen Preview 1">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2>This one is even better</h2>
+                    <p>Easy to download YouTube video withever format you like, include MP3 format. <br>
+                        Moreover, YMusic can auto detect Artist and Album name of the video using <a
+                                href="https://last.fm">last.fm</a> service.
+                        It makes your music collection clearer and more convenient for searching.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-2.png" data-video="video/video-2-rotated-resized-15s"
+                                 alt="Screen Preview 2">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2>Jockey player</h2>
+                    <p>YMusic forked from <a href="https://github.com/marverenic/Jockey">Jockey open source project</a>
+                        - a super powerful and lightweight music player.<br>
+                        •  Customizable interface with 81 color combinations to choose from<br>
+                        •  Last.fm integration for retrieving artist images and descriptions<br>
+                        •  Smart Playlists with fully customizable rules<br>
+                        •  Custom equalizers<br>
+                        •  Gapless playback<br>
+                        •  Home screen widgets<br>
+                    </p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-3.png" data-video="video/video-3-rotated-resized-15s"
+                                 alt="Screen Preview 3">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2>Interact with YouTube app</h2>
+                    <p>Just click the Share button in YouTube app, you can easily navigate to YMusic to listen video in
+                        background or download for playing offline later.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-4.png" data-video="video/video-4-rotated-resized-15s"
+                                 alt="Screen Preview 4">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div> <!-- cd-product-tour -->
+
+    <div class="cd-slider-nav">
+        <a class="cd-prev" href="#0">Previous</a>
+        <a class="cd-next" href="#0">Next</a>
+    </div> <!-- cd-slider-nav -->
+
+    <div class="cd-loader"></div> <!-- top loading bar -->
+
+</main>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<script>
+    $(document).ready(function () {
+        $(".download").each(function (i) {
+            $(this).click(function () {
+                ga('send', 'event', {
+                    eventCategory: "download",
+                    eventAction: "click",
+                    eventLabel: event.target.href,
+                    transport: 'beacon'
+                });
+
+                let x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () {
+                    x.className = x.className.replace("show", "");
+                }, 3000);
+            });
+        })
+    });
+</script>
+</body>
+</html>

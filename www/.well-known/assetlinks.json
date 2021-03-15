@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.kapp.youtube.final",
+      "sha256_cert_fingerprints": [
+        "64:E6:26:AB:9F:E6:7F:8A:CE:59:4F:04:D9:2F:E8:B1:BE:65:B1:62:21:29:08:1C:CC:4A:F2:00:FD:D2:08:CB"
+      ]
+    }
+  }
+]
