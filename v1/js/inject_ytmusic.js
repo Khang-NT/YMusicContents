@@ -19,7 +19,7 @@
 
     document.ymusicInitialized = true;
 
-    var css = 'ytmusic-menu-service-item-renderer, paper-dialog { display: none; visibility: invisible; }';
+    var css = 'ytmusic-menu-service-item-renderer, paper-dialog, ytmusic-mealbar-promo-renderer { display: none; visibility: invisible; }';
     var style = document.createElement('style');
 
     head.appendChild(style);

@@ -8,7 +8,7 @@
         }
         if (t && !e.ymusicInitialized) {
             e.ymusicInitialized = !0;
-            var i = "ytmusic-menu-service-item-renderer, paper-dialog { display: none; visibility: invisible; }", o = e.createElement("style");
+            var i = "ytmusic-menu-service-item-renderer, paper-dialog, ytmusic-mealbar-promo-renderer { display: none; visibility: invisible; }", o = e.createElement("style");
             t.appendChild(o), o.type = "text/css", o.styleSheet ? o.styleSheet.cssText = i : o.appendChild(e.createTextNode(i)),
                 function t() {
                     var n = e.getElementById("left-content");
@@ -148,7 +148,9 @@
             } ].forEach(function(e) {
                 setTimeout(e, t), t += 100;
             }), setTimeout(function() {
-                for (var t = e.getElementsByTagName("ytmusic-play-button-renderer"), n = 0; n < t.length; n++) t[n].setAttribute("state", "default");
+                for (var t = e.getElementsByTagName("ytmusic-play-button-renderer"), n = 0; n < t.length; n++) {
+                    t[n].setAttribute("state", "default");
+                }
             }, 3e3);
         }
     }
