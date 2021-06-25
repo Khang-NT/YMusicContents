@@ -226,9 +226,21 @@
         }, 3000);
     }
 
+    var isAsync = true;
+
+    try {
+        eval('async () => {}');
+    } catch (e) {
+        if (e instanceof SyntaxError)
+            isAsync = false;
+    }
+
+    var hasFetchApi = isAsync && 'Promise' in window && 'fetch' in window;
+
     (function (originOpen) {
         XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
             this._url = url;
+            // console.log(url);
             originOpen.call(this, method, url, async, user, pass);
         };
     })(XMLHttpRequest.prototype.open);
@@ -238,10 +250,11 @@
             var self = this;
             originAddEventListener.call(self, name, function () {
                 if (self._url && (
-                    self._url.indexOf("/youtubei/v1/next") > -1 ||
-                    self._url.indexOf("/get_video_info") > -1 ||
-                    self._url.indexOf("/get_queue") > -1 ||
-                    self._url.indexOf("/get_share_panel") > -1)) {
+                    self._url.indexOf('/youtubei/v1/next') > -1 ||
+                    self._url.indexOf('/youtubei/v1/player') > -1 ||
+                    self._url.indexOf('/get_video_info') > -1 ||
+                    self._url.indexOf('/get_queue') > -1 ||
+                    self._url.indexOf('/get_share_panel') > -1)) {
                     return;
                 }
                 callback.call(self);
@@ -249,7 +262,7 @@
         };
     })(XMLHttpRequest.prototype.addEventListener);
 
-    var WATCH_COMMAND_PREFIX = "ymusic_watch:";
+    var WATCH_COMMAND_PREFIX = 'ymusic_watch:';
 
     function playCommand(videoId, playlistId, shuffle) {
         console.log(WATCH_COMMAND_PREFIX + JSON.stringify({
@@ -285,7 +298,7 @@
                             var url = JSON.parse(self.responseText).actions[0].openPopupAction
                                 .popup.unifiedSharePanelRenderer.contents[0].thirdPartyNetworkSection
                                 .copyLinkContainer.copyLinkRenderer.shortUrl;
-                            console.log("ymusic_share:" + url);
+                            console.log('ymusic_share:' + url);
                         } catch (ignore) {
                         }
                     }
@@ -294,20 +307,23 @@
                 if (oldOnReadyStateChange) oldOnReadyStateChange.call(self);
             };
 
-            if (self._url && self._url.indexOf("/get_share_panel") > -1) {
+            if (self._url && self._url.indexOf('/get_share_panel') > -1) {
                 self._waitForShare = true;
             }
 
-            if (self._url && (self._url.indexOf("/get_video_info") > -1 || self._url.indexOf("/get_queue") > -1)) {
+            if (self._url && (
+                self._url.indexOf('/get_video_info') > -1 ||
+                self._url.indexOf('/get_queue') > -1 ||
+                self._url.indexOf('/youtubei/v1/player') > -1
+            )) {
                 // avoid load video
                 setTimeout(resetPlayer, 500);
                 return;
             }
 
-            if (self._url && self._url.indexOf("/youtubei/v1/next") > -1) {
+            if (self._url && self._url.indexOf('/youtubei/v1/next') > -1) {
                 var bodyData = JSON.parse(body);
-                console.log(bodyData);
-                var shuffle = typeof bodyData.params == "string" && bodyData.params.indexOf("wAEB8gECGAE") > -1;
+                var shuffle = typeof bodyData.params == 'string' && bodyData.params.indexOf('wAEB8gECGAE') > -1;
                 self._shuffle = shuffle;
                 var playlistId = bodyData.playlistId;
                 var videoId = bodyData.videoId;
@@ -315,18 +331,18 @@
                     setTimeout(resetPlayer, 500);
                     return playCommand(videoId, playlistId, shuffle);
                 }
-                if (playlistId.indexOf("RDMM") === 0 && playlistId.length === 15) {
+                if (playlistId.indexOf('RDMM') === 0 && playlistId.length === 15) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(playlistId.substring(4), playlistId, shuffle);
                 }
-                if (playlistId.indexOf("RDAMVM") === 0 && playlistId.length === 17) {
+                if (playlistId.indexOf('RDAMVM') === 0 && playlistId.length === 17) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(playlistId.substring(6), playlistId, shuffle);
                 }
-                var isMyMix = playlistId === "RDMM";
-                var isChannelRadio = playlistId.indexOf("RD") === 0 && playlistId.length === 26;
-                var isMyLibrary = playlistId.indexOf("ML") === 0;
-                var isMyLikes = playlistId === "LM";
+                var isMyMix = playlistId === 'RDMM';
+                var isChannelRadio = playlistId.indexOf('RD') === 0 && playlistId.length === 26;
+                var isMyLibrary = playlistId.indexOf('ML') === 0;
+                var isMyLikes = playlistId === 'LM';
                 if (!isMyMix && !isChannelRadio && !isMyLibrary && !isMyLikes) {
                     setTimeout(resetPlayer, 500);
                     return playCommand(null, playlistId, shuffle);
@@ -340,4 +356,37 @@
             }
         };
     })(XMLHttpRequest.prototype.send);
+
+    if (hasFetchApi) {
+        eval('{var origFetch = window.fetch;\n' +
+            '        window.fetch = async function (...args) {\n' +
+            '            try {\n' +
+            '                if (args[0].url && (args[0].url.indexOf(\'/youtubei/v1/next\') > -1 || args[0].url.indexOf(\'/get_share_panel\') > -1)) {\n' +
+            '                    var promise = new Promise(async function () {\n' +
+            '                        var xhr = new XMLHttpRequest();\n' +
+            '                        xhr.open(\'POST\', args[0].url, true);\n' +
+            '                        Array.from(args[0].headers.keys()).forEach(key => {\n' +
+            '                            xhr.setRequestHeader(key, args[0].headers.get(key));\n' +
+            '                        });\n' +
+            '                        xhr.setRequestHeader(\'Content-Type\', \'application/json\');\n' +
+            '                        xhr.send(await args[0].text());\n' +
+            '                    });\n' +
+            '                    promise.then = function () {\n' +
+            '                    };\n' +
+            '\n' +
+            '                    promise.catch = function () {\n' +
+            '                    };\n' +
+            '\n' +
+            '                    promise.finally = function () {\n' +
+            '                    };\n' +
+            '\n' +
+            '                    return promise;\n' +
+            '                }\n' +
+            '            } catch (e) {\n' +
+            '                console.error(e);\n' +
+            '            }\n' +
+            '\n' +
+            '            return await origFetch.apply(this, args);\n' +
+            '        };}');
+    }
 })(document);
