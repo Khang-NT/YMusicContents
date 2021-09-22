@@ -1,7 +1,7 @@
 [
   {
     "country": "Brazil",
-    "wordTranslatedCount": 544,
+    "wordTranslatedCount": 616,
     "langCode": "pt",
     "name": "Gabriel Ribeiro",
     "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_email.png",
@@ -27,7 +27,7 @@
   },
   {
     "country": "Russia",
-    "wordTranslatedCount": 1263,
+    "wordTranslatedCount": 1278,
     "langCode": "ru",
     "name": "Andrey Guskov (GooseWing)",
     "id": 2,
@@ -56,7 +56,7 @@
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/4.jpg",
     "joinSince": "01/01/2019",
     "button2Link": "https://www.linkedin.com/in/kamel-d-541ab983/",
-    "wordTranslatedCount": 4025,
+    "wordTranslatedCount": 4104,
     "name": "Kamel Deeb",
     "button3Link": "mailto:KamelDeeb97@gmail.com",
     "id": 4,
@@ -79,7 +79,7 @@
   },
   {
     "country": "South Korea",
-    "wordTranslatedCount": 3087,
+    "wordTranslatedCount": 3309,
     "langCode": "ko",
     "name": "Jae woo",
     "id": 6,
@@ -103,7 +103,7 @@
   },
   {
     "country": "Greece",
-    "wordTranslatedCount": 1848,
+    "wordTranslatedCount": 1884,
     "langCode": "el",
     "name": "Theodoros Ioannou",
     "id": 8,
@@ -146,7 +146,7 @@
     "avatar": "http://khang-nt.github.io/YMusicContents/avatars/11.jpg",
     "joinSince": "12/12/2020",
     "button2Link": "https://t.me/nadiration",
-    "wordTranslatedCount": 4541,
+    "wordTranslatedCount": 6093,
     "name": "Nadir Nour",
     "button3Link": "mailto:nadirnour99@hotmail.com",
     "id": 11,
@@ -168,5 +168,21 @@
     "joinSince": "01/01/2019",
     "button1Link": "https://www.instagram.com/das_oni",
     "button2Link": "https://www.youtube.com/channel/UCgBfOl5LTB0lMCG5yWa473w"
+  },
+  {
+    "country": "Indonesia",
+    "langCode": "id",
+    "button2Icon": "https://khang-nt.github.io/YMusicContents/ic_twitter.png",
+    "avatar": "http://khang-nt.github.io/YMusicContents/avatars/13.jpg",
+    "joinSince": "01/01/2019",
+    "button2Link": "https://twitter.com/aaf30_1",
+    "wordTranslatedCount": 1411,
+    "name": "Achmad Al Fandi",
+    "button3Link": "https://instagram.com/alfndahmd",
+    "id": 13,
+    "button3Icon": "https://khang-nt.github.io/YMusicContents/ic_ins.png",
+    "lang": "Indonesian Translator",
+    "button1Icon": "https://khang-nt.github.io/YMusicContents/ic_fb.png",
+    "button1Link": "https://m.facebook.com/achmad.alfandi.7"
   }
 ]
