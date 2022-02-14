@@ -2,6 +2,17 @@ jQuery(document).ready(function($){
 	//update this value if you change this breakpoint in the style.css file (or _layout.scss if you use SASS)
 	var MqL = 1070;
 
+	function updateReelItVisibility() {
+		if($(window).width() >= MqL) {
+			$('#reel-it-bottom').hide();
+			$('#reel-it-slider').show();
+		} else {
+			$('#reel-it-slider').hide();
+			$('#reel-it-bottom').show();
+		}
+	}
+	updateReelItVisibility();
+
 	//on desktop, switch from product intro div to product tour div
 	$('a[href="#cd-product-tour"]').on('click', function(event){
 		event.preventDefault();
@@ -48,6 +59,7 @@ jQuery(document).ready(function($){
 
 	$(window).on('resize', function(){
 		window.requestAnimationFrame(function(){
+			updateReelItVisibility();
 			if($(window).width() < MqL) {
 				$('.cd-single-item').each(function(){
 					$(this).find('img').css('opacity', 1).end().find('video').hide();
