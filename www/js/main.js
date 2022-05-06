@@ -6,9 +6,13 @@ jQuery(document).ready(function($){
 		if($(window).width() >= MqL) {
 			$('#reel-it-bottom').hide();
 			$('#reel-it-slider').show();
+			$('a[href="#cd-product-tour"]').show();
+			$('#btn-download').removeClass('salmon');
 		} else {
 			$('#reel-it-slider').hide();
 			$('#reel-it-bottom').show();
+			$('a[href="#cd-product-tour"]').hide();
+			$('#btn-download').addClass('salmon');
 		}
 	}
 	updateReelItVisibility();

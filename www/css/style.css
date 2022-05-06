@@ -198,6 +198,9 @@ html, body {
   max-width: 560px;
   margin: 0 auto;
 }
+.cd-triggers {
+  margin-top: 20px;
+}
 .cd-product-intro .cd-triggers:after {
   content: "";
   display: table;
