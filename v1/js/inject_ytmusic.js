@@ -358,35 +358,28 @@
     })(XMLHttpRequest.prototype.send);
 
     if (hasFetchApi) {
-        eval('{var origFetch = window.fetch;\n' +
-            '        window.fetch = async function (...args) {\n' +
-            '            try {\n' +
-            '                if (args[0].url && (args[0].url.indexOf(\'/youtubei/v1/next\') > -1 || args[0].url.indexOf(\'/get_share_panel\') > -1)) {\n' +
-            '                    var promise = new Promise(async function () {\n' +
-            '                        var xhr = new XMLHttpRequest();\n' +
-            '                        xhr.open(\'POST\', args[0].url, true);\n' +
-            '                        Array.from(args[0].headers.keys()).forEach(key => {\n' +
-            '                            xhr.setRequestHeader(key, args[0].headers.get(key));\n' +
-            '                        });\n' +
-            '                        xhr.setRequestHeader(\'Content-Type\', \'application/json\');\n' +
-            '                        xhr.send(await args[0].text());\n' +
-            '                    });\n' +
-            '                    promise.then = function () {\n' +
-            '                    };\n' +
-            '\n' +
-            '                    promise.catch = function () {\n' +
-            '                    };\n' +
-            '\n' +
-            '                    promise.finally = function () {\n' +
-            '                    };\n' +
-            '\n' +
-            '                    return promise;\n' +
-            '                }\n' +
-            '            } catch (e) {\n' +
-            '                console.error(e);\n' +
-            '            }\n' +
-            '\n' +
-            '            return await origFetch.apply(this, args);\n' +
-            '        };}');
+        var origFetch = window.fetch;
+        var promiseNeverResolve = new Promise(function () {});
+        window.fetch = function (...args) {
+            var request = args[0] && args[0].headers ? args[0] : new Request(args[0].toString(), args[1]);
+
+            var url = request.url || '';
+            if (url.indexOf('/youtubei/v1/next') > -1
+                || url.indexOf('/get_share_panel') > -1) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', url, true);
+                var headers = request.headers;
+                Array.from(headers.keys()).forEach(function (key) {
+                    xhr.setRequestHeader(key, headers.get(key));
+                })
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                request.text().then(function (text) {
+                    return xhr.send(text);
+                });
+
+                return promiseNeverResolve;
+            }
+            return origFetch.apply(this, args)
+        }
     }
 })(document);
