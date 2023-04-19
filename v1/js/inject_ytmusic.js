@@ -329,7 +329,7 @@
                 var videoId = bodyData.videoId;
                 if (videoId) {
                     setTimeout(resetPlayer, 500);
-                    return playCommand(videoId, playlistId, shuffle);
+                    return playCommand(videoId, playlistId || 'RD' + videoId, shuffle);
                 }
                 if (playlistId.indexOf('RDMM') === 0 && playlistId.length === 15) {
                     setTimeout(resetPlayer, 500);
