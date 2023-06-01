@@ -82,12 +82,11 @@
             display: flex;
             flex-direction: column;
             min-height: 100%;
-            padding: 0 5%;
         }
 
         .main-footer {
             margin-top: 100px;
-            padding: 20px 5%;
+            padding: 20px 10%;
             text-align: center;
             line-height: 1.5rem;
             font-size: 1rem;
@@ -106,7 +105,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 50px 5%;
+            padding: 50px 10%;
             text-align: center;
             flex-grow: 1;
             align-self: flex-start;
@@ -139,20 +138,26 @@
 
         .thumbnail {
             flex-grow: 1;
-            padding: 50px 5%;
+            padding: 50px 10%;
         }
         @media only screen and (min-width: 1195px) {
-            .thumbnail {
-                min-width: 300px;
-            }
             .main-content {
                 align-items: center;
                 align-content: center;
             }
+            .main-footer {
+                padding: 20px 50px;
+            }
             .cd-product-intro {
                 text-align: justify;
                 align-self: center;
+                padding: 0 50px;
             }
+            .thumbnail {
+                min-width: 300px;
+                padding: 0 50px;
+            }
+
             .cd-product-intro h1 {
                 font-size: 3.125rem;
             }
