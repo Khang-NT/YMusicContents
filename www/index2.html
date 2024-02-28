@@ -208,15 +208,29 @@
         .btn.salmon:hover {
             background-color: #f79d98;
         }
+        .btn.yellow {
+            background-color: #b6861e;
+        }
+        .btn.yellow:hover {
+            background-color: #cbab66;
+        }
+        .btn.green {
+            background-color: #508d18;
+        }
+        .btn.green:hover {
+            background-color: #67b61e;
+        }
 
         .cd-product-intro .btn {
-            width: 200px;
+            min-width: 200px;
             height: 40px;
             line-height: 40px;
             margin-top: 20px;
             margin-bottom: 20px;
             font-size: 0.875rem;
             letter-spacing: 2px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .cd-image-container {
@@ -311,7 +325,7 @@
                      data-size="small" data-share="true"
                      data-show-faces="false" data-colorscheme="dark"></div>
 
-                <a id="btnDownload" href="https://apkdrive.io/static/apk/4368_ymusic_arm64.apk" class="btn download salmon">Download</a>
+                <a id="btnDownload" href="https://apkdrive.io/static/apk/4368_ymusic_arm64.apk" class="btn download salmon">Download .APK</a>
             </div>
         </div>
         <div class="thumbnail ">
@@ -337,14 +351,28 @@
 </main>
 
 <script>
-    document.getElementById('btnDownload').onclick = function () {
+    var urlParams = new URLSearchParams(window.location.search);
+    var cpu = urlParams.get("cpu") || "arm64";
+    var btnDownload = document.getElementById('btnDownload');
+    if (cpu === 'arm-v7n' || cpu === 'arm_neon') {
+        btnDownload.href = btnDownload.href.replace("arm64", "arm_neon");
+        btnDownload.setAttribute("class", btnDownload.getAttribute("class").replace("salmon", "green"));
+        btnDownload.innerHTML = 'Download .APK - Arm32'
+    } else if (cpu === 'arm') {
+        btnDownload.href = btnDownload.href.replace("arm64", "arm");
+        btnDownload.setAttribute("class", btnDownload.getAttribute("class").replace("salmon", "yellow"));
+        btnDownload.innerHTML = 'Download .APK - Arm32'
+    }
+
+    btnDownload.onclick = function () {
         ga('send', 'event', {
             eventCategory: "download",
             eventAction: "click",
             eventLabel: "download",
-            transport: 'beacon'
+            transport: 'beacon',
+            cpu
         });
-    }
+    };
 </script>
 </body>
 </html>
