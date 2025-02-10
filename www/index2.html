@@ -221,6 +221,14 @@
             background-color: #67b61e;
         }
 
+        .btn.cyan {
+            color: #000000;
+            background-color: #28ffc3;
+        }
+        .btn.cyan:hover {
+            background-color: #11fab9;
+        }
+
         .cd-product-intro .btn {
             min-width: 200px;
             height: 40px;
@@ -362,6 +370,10 @@
         btnDownload.href = btnDownload.href.replace("arm64", "arm");
         btnDownload.setAttribute("class", btnDownload.getAttribute("class").replace("salmon", "yellow"));
         btnDownload.innerHTML = 'Download .APK - Arm32'
+    } else if (cpu === 'x86') {
+        btnDownload.href = btnDownload.href.replace("arm64", "x86");
+        btnDownload.setAttribute("class", btnDownload.getAttribute("class").replace("salmon", "cyan"));
+        btnDownload.innerHTML = 'Download .APK - x86'
     }
 
     btnDownload.onclick = function () {
