@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YMusic</title>
+    <script type="text/javascript">
+        'use strict';
+        try {
+            console.log("console.log");
+            console.error("console.error");
+            if (typeof IYMusic !== "undefined") {
+                if (IYMusic.onConsoleLog != null) {
+                    IYMusic.onConsoleLog("_ymusic_out::IYMusic.onConsoleLog");
+                }
+                if (IYMusic.resetTimeout != null) {
+                    IYMusic.resetTimeout();
+                }
+            }
+        } catch (e) {
+            console.error(e)
+        }
+
+        let url = typeof URLSearchParams != "undefined" ? new URLSearchParams(window.location.search).get("to") : null;
+        if (url) {
+            url = decodeURIComponent(url);
+        } else {
+            const match = window.location.href.match(/[\?&]to=(.+?)(?:&|$)/);
+            if (match && match.length) {
+                url = decodeURIComponent(match[1]);
+            }
+        }
+
+        if (url) {
+            try {
+                if (typeof IYMusic === "undefined"
+                    || IYMusic == null
+                    || IYMusic.loadUrl == null
+                    || !IYMusic.loadUrl(url)) {
+                    window.location.assign(url);
+                }
+            } catch (e) {
+                window.location.assign(url);
+            }
+        } else {
+            console.error("invalid url " + url)
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
